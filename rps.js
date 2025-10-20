@@ -15,3 +15,21 @@
 // if there are any eorrors in the code
 // if the code is stated multiple times in the console (use else if{})
 // if everything is SPELLED CORRECTLY 
+// if the code can run something like "RoCK" or "PAPer" Etc
+
+// Function for computer picking "Rock" "Paper" or "Scissors":
+// let compscore = 0
+// let playerscore = 0
+// function getComputerChoice() {
+// const options = ("Rock", "Paper", "Scissors");
+// const randomNumber = Math.random(options)
+// return choices[randomNumber]
+// }
+
+
+// console.log(getComputerChoice)
+
+// Function for player Picking the 3 options:
+
+let playerchoice = prompt("Pick Between 'Rock', 'Paper', or 'Scissors'") 
+if( playerchoice = 'Rock')
