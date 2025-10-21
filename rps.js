@@ -9,6 +9,7 @@
 // Paper > Rock
 // Rock > Scissors
 // Scissors > Paper
+// add a "tie" text
 
 
 // DOUBLE CHECK
@@ -31,5 +32,7 @@
 
 // Function for player Picking the 3 options:
 
-let playerchoice = prompt("Pick Between 'Rock', 'Paper', or 'Scissors'") 
-if( playerchoice = 'Rock')
+// let playerchoice = prompt("Pick Between 'Rock', 'Paper', or 'Scissors'") 
+// if( playerchoice = 'Rock'){
+
+// }
