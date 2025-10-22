@@ -19,20 +19,36 @@
 // if the code can run something like "RoCK" or "PAPer" Etc
 
 // Function for computer picking "Rock" "Paper" or "Scissors":
-// let compscore = 0
-// let playerscore = 0
-// function getComputerChoice() {
-// const options = ("Rock", "Paper", "Scissors");
-// const randomNumber = Math.random(options)
-// return choices[randomNumber]
-// }
+let compscore = 0
+let playerscore = 0
+let playerChoice = prompt("Would you like to pick Rock, Paper, or Scissors?")
+let a = Math.random()
+let computerChoice;
+if(a < (1/3)){
+    console.log("Rock")
+    computerChoice = "Rock"
+} else if(a < (2/3)){
+    console.log("Paper")
+    computerChoice = "Paper"
+} else {
+    console.log("Scissors")
+    computerChoice = "Scissors"
+}
 
 
-// console.log(getComputerChoice)
+// Actual Gameplay going on for Rock, Paper, Scissors
+if(computerChoice == playerChoice){
+    console.log("It's a Tie!")
+} else if(computerChoice ){
 
+} else{
+
+}
+
+console.log(`It's a tie.  Computer chose ${computerChoice}`)
+console.log(`It's a tie. Player chose ${playerChoice}`)
 // Function for player Picking the 3 options:
-
-// let playerchoice = prompt("Pick Between 'Rock', 'Paper', or 'Scissors'") 
-// if( playerchoice = 'Rock'){
-
+// if(playerChoice == "Rock"){
+// } else if( playerchoice == "Paper"){
+// } else if(playerChoice == "Scissors"){
 // }
