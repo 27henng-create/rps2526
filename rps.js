@@ -40,20 +40,20 @@ if(a < (1/3)){
 if(computerChoice == playerChoice){
     console.log(`It's a tie!  Computer chose ${computerChoice}`)
     console.log(`It's a tie! Player chose ${playerChoice}`)
-} else if(computerChoice = "Rock"){
-    if(playerChoice = "Scissors"){
+} else if(computerChoice == "Rock"){
+    if(playerChoice == "Scissors"){
         console.log('Computer wins, Rock beats Scissors!')
     } else {
         console.log('Player wins, Paper beats Rock!')
     }
-} else if(computerChoice = "Paper"){
-    if(playerChoice = "Scissors"){
+} else if(computerChoice == "Paper"){
+    if(playerChoice == "Scissors"){
         console.log('Player wins, Scissors beats Paper')
     } else {
         console.log('Computer wins, Paper beats Rocks')
     }
-} else if(computerChoice = "Scissors"){
-    if(playerChoice = "Paper"){
+} else if(computerChoice == "Scissors"){
+    if(playerChoice == "Paper"){
         console.log('Computer wins, Scissors beats Paper')
     } else {
         console.log('Player wins, Rock beats Scissors')
