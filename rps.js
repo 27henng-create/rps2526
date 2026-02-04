@@ -78,3 +78,4 @@ while(playerscore < 5 && compscore < 5){
 alert(`Player = ${playerscore} Computer = ${compscore}`);
 playerChoice = 0;
 }
+
