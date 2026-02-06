@@ -22,62 +22,74 @@
 let compscore = 0
 let playerscore = 0
 let playerChoice
-addEventListener.container()
+const btn = document.querySelector(".btn")
+btn.forEach(btn => {
+    btn.addEventListener("click", () => {
+        playerChoice = btn.id
 
-// while(playerscore < 5 && compscore < 5){
-//     while(playerChoice != "rock" && playerChoice != "paper" && playerChoice != "scissors"){
-//         playerChoice = prompt("Would you like to pick Rock, Paper, or Scissors?").toLowerCase();
-//     }
-//         let a = Math.random()
-//     let computerChoice;
-//     if(a < (1/3)){
-//         console.log("rock")
-//         computerChoice = "rock"
-//     } else if(a < (2/3)){
-//         console.log("paper")
-//         computerChoice = "paper"
-//     } else {
-//         console.log("scissors")
-//         computerChoice = "scissors"
-//     }
+        switch(target.id){
+            case 'rock':
+                console.log("Rock");
+
+        }
+    });
+    
+});
+
+while(playerscore < 5 && compscore < 5){
+    while(playerChoice != "rock" && playerChoice != "paper" && playerChoice != "scissors"){
+        playerChoice = prompt("Would you like to pick Rock, Paper, or Scissors?").toLowerCase();
+    }
+        let a = Math.random()
+    let computerChoice;
+    if(a < (1/3)){
+        console.log("rock")
+        computerChoice = "rock"
+    } else if(a < (2/3)){
+        console.log("paper")
+        computerChoice = "paper"
+    } else {
+        console.log("scissors")
+        computerChoice = "scissors"
+    }
 
 
-//     // Actual Gameplay going on for Rock, Paper, Scissors
-//     if(computerChoice == playerChoice){
-//         console.log(`It's a tie!  Computer chose ${computerChoice}, Player chose ${playerChoice}`)
-//         alert(`It's a tie!  Computer chose ${computerChoice}, Player chose ${playerChoice}`)
-//     } else if(computerChoice == "rock"){
-//         if(playerChoice == "scissors"){
-//             console.log('Computer wins, Rock beats Scissors!')
-//             alert('Computer wins, Rock beats Scissors!')
-//             compscore += 1
-//         } else {
-//             console.log('Player wins, Paper beats Rock!')
-//             alert('Player wins, Paper beats Rock!')
-//             playerscore += 1
-//         }
-//     } else if(computerChoice == "paper"){
-//         if(playerChoice == "scissors"){
-//             console.log('Player wins, Scissors beats Paper')
-//             alert('Player wins, Scissors beats Paper')
-//             playerscore += 1
-//         } else {
-//             console.log('Computer wins, Paper beats Rocks')
-//             alert('Computer wins, Paper beats Rocks')
-//             compscore += 1
-//         }
-//     } else if(computerChoice == "scissors"){
-//         if(playerChoice == "paper"){
-//             console.log('Computer wins, Scissors beats Paper')
-//             alert('Computer wins, Scissors beats Paper')
-//             compscore += 1
-//         } else {
-//             console.log('Player wins, Rock beats Scissors')
-//             alert('Player wins, Rock beats Scissors')
-//             playerscore += 1
-//         }
-// }
-// alert(`Player = ${playerscore} Computer = ${compscore}`);
-// playerChoice = 0;
-// }
+    // Actual Gameplay going on for Rock, Paper, Scissors
+    if(computerChoice == playerChoice){
+        console.log(`It's a tie!  Computer chose ${computerChoice}, Player chose ${playerChoice}`)
+        alert(`It's a tie!  Computer chose ${computerChoice}, Player chose ${playerChoice}`)
+    } else if(computerChoice == "rock"){
+        if(playerChoice == "scissors"){
+            console.log('Computer wins, Rock beats Scissors!')
+            alert('Computer wins, Rock beats Scissors!')
+            compscore += 1
+        } else {
+            console.log('Player wins, Paper beats Rock!')
+            alert('Player wins, Paper beats Rock!')
+            playerscore += 1
+        }
+    } else if(computerChoice == "paper"){
+        if(playerChoice == "scissors"){
+            console.log('Player wins, Scissors beats Paper')
+            alert('Player wins, Scissors beats Paper')
+            playerscore += 1
+        } else {
+            console.log('Computer wins, Paper beats Rocks')
+            alert('Computer wins, Paper beats Rocks')
+            compscore += 1
+        }
+    } else if(computerChoice == "scissors"){
+        if(playerChoice == "paper"){
+            console.log('Computer wins, Scissors beats Paper')
+            alert('Computer wins, Scissors beats Paper')
+            compscore += 1
+        } else {
+            console.log('Player wins, Rock beats Scissors')
+            alert('Player wins, Rock beats Scissors')
+            playerscore += 1
+        }
+}
+alert(`Player = ${playerscore} Computer = ${compscore}`);
+playerChoice = 0;
+}
 
